@@ -21,9 +21,7 @@
 </script>
 
 <style scoped>
-* {
-    font-family: 'Raleway';
-}
+
 
 .header {
     max-width: 1110px;
