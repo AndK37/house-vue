@@ -1,5 +1,5 @@
 <template>
-    <div style="width: 100%; background-color: #e1ede6;">
+    <div class="wrap">
         <div class="header">
             <div class="logo">
                 <img src="../../public/img/header/logo.png" alt="" width="35px">
@@ -22,7 +22,10 @@
 
 <style scoped>
 
-
+.wrap {
+    width: 100%; 
+    background-color: #e1ede6;
+}
 .header {
     max-width: 1110px;
     height: 100px;
@@ -115,11 +118,14 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 500px) {
     .header {
         max-width: 290px;
+        background-color: #f4f6f5;
     }
-
+    .wrap {
+        background-color: #f4f6f5;
+    }
     .logo {
 
     }
@@ -129,7 +135,7 @@
     }
 
     .title {
-
+        
     }
 
     .nav-item {

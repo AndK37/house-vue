@@ -1,5 +1,14 @@
 <template>
-  <div class="about">
-    <h1>G</h1>
+  <div class="">
+    <card-list :country="'germany'" />
   </div>
 </template>
+
+<script>
+import CardList from '@/components/CardList.vue';
+export default {
+  components: {
+    "card-list": CardList,
+  }
+}
+</script>

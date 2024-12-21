@@ -5,7 +5,7 @@ import EnglandView from '../views/EnglandView.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/france',
     name: 'france',
     component: FranceView
   },
@@ -18,6 +18,10 @@ const routes = [
     path: '/england',
     name: 'england',
     component: EnglandView
+  },
+  {
+    path: '/',
+    redirect: '/france'
   },
 ]
 

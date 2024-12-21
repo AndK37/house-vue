@@ -105,7 +105,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
     .image {
         width: 290;
         height: 400px;
@@ -120,6 +120,13 @@
         height: 258.05px;
         top: 45px;
         left: 30px;
+    }
+    .t2 {
+        max-width: 100%;
+        width: 100%;
+    }
+    .image {
+        width: 100%;
     }
 }
 </style>

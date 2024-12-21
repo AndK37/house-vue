@@ -1,16 +1,24 @@
 <template>
     <div class="card">
-        <img src="img/france/1.png" alt="">
-        <span class="t1">Марсель Руссо</span>
-        <span class="t2">Охота Амура</span>
-        <span class="t3">Холст, масло (50х80)</span>
-        <span class="t4">14 500 руб</span>
+        <img :src="image" alt="">
+        <span class="t1">{{ author }}</span>
+        <span class="t2">{{ title }}</span>
+        <span class="t3">{{ type }}</span>
+        <span class="t4">{{ price }}</span>
         <button>В корзину</button>
     </div>
 </template>
 
 <script>
-
+export default {
+    props: {
+        image: String,
+        author: String,
+        title: String,
+        type: String,
+        price: String,
+    }
+}
 </script>
 
 <style scoped>

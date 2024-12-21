@@ -35,6 +35,9 @@ export default {
 
 #app {
   background-color: #f4f6f5;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 
 }
 

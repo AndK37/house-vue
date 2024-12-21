@@ -3,7 +3,7 @@
         <img src="../../public/img/hero/image.png" alt="">
         <div class="t">
             <span class="t1">Реплики картин от<br><span class="t1" style="color: #598d66;">Inc. House</span></span>
-            <span class="t2">Высокое качество отрисовки на плотной бумаге или льняном<br>холсте. Редкие произведения,
+            <span class="t2">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения,
                 доступные
                 цены.</span>
             <button>Продукция</button>
@@ -20,7 +20,6 @@
     display: flex;
     max-width: 1110px;
     max-height: 620px;
-    min-height: 380px;
     height: 43vw;
     align-items: center;
     margin-left: auto;
@@ -49,6 +48,7 @@
     font-size: 18px;
     line-height: 150%;
     color: #86928B;
+    text-wrap: wrap;
 }
 
 img {
@@ -104,15 +104,21 @@ button {
         max-height: 380px;
         min-height: 239px;
     }
+
     .t {
         gap: 10px;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 650px) {
     .t {
         gap: 0px;
     }
+
+    img {
+        display: none;
+    }
+
     .t1 {
         font-weight: 500;
         font-size: 36px;
@@ -136,6 +142,7 @@ button {
 
     .hero {
         gap: 10px;
+        width: 100px;
     }
 }
 

@@ -2,7 +2,7 @@
     <div class="nav">
         <span>Репродукция</span>
         <div class="items">
-            <router-link to="/">Франция</router-link>
+            <router-link to="/france">Франция</router-link>
             <router-link to="/germany">Германия</router-link>
             <router-link to="/england">Англия</router-link>
         </div>
@@ -22,8 +22,11 @@
     align-items: center;
     justify-content: space-between;
     max-width: 1110px;
+    width: 100%;
     padding-left: 5vw;
     padding-right: 5vw;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 span {
@@ -36,7 +39,10 @@ span {
 
 .items {
     display: flex;
-    gap: 20px;
+
+    overflow: scroll;
+    justify-content: space-between;
+    width: 400px;
 }
 
 a {
@@ -67,7 +73,11 @@ a.router-link-exact-active {
     text-decoration: none;
 }
 
-@media (max-width: 1052px) {}
+@media (max-width: 1200px) {
+    .nav {
+        max-width: 768px;
+    }
+}
 
 @media (max-width: 768px) {
     span {
@@ -75,29 +85,30 @@ a.router-link-exact-active {
         font-size: 30px;
         line-height: 110%;
     }
+    .nav {
+        width: fit-content;
+    }
 }
 
 @media (max-width: 576px) {
     .nav {
         align-items: flex-start;
         flex-direction: column;
-        gap: 20px;
-    }
+        gap: 15px;
 
+
+    }
+    .items {
+        overflow: scroll;
+        width: 100%;
+    }
     span {
         font-weight: 500;
         font-size: 24px;
         line-height: 110%;
     }
 
-    a {
-        margin-left: 0;
-        margin-right: 20px;
-    }
 
-    .items {
-        overflow: scroll;
-    }
 }
 
 @media (max-width: 320px) {}

@@ -4,7 +4,7 @@
         <img class="promo__image" src="img/promo/back.png" alt="">
         <div class="content">
             <div class="top">
-                <img src="img/promo/star.png" alt="">
+                <img class="star" src="img/promo/star.png" alt="">
                 <span class="t1">Новая коллекция французских авторов</span>
             </div>
             <div class="mid">
@@ -50,7 +50,11 @@
     height: 687px;
     left: -238px;
     top: -57px;
-    
+
+}
+
+img {
+    height: 100%;
 }
 
 .promo__image {
@@ -120,5 +124,50 @@
     color: #2C2D35;
 
     border: none;
+}
+
+@media (max-width: 576px) {
+    .star {
+        height: 50px;
+    }
+    .promo {
+        height: 410px;
+
+    }
+    .content {
+        top: 0;
+        padding: 30px;
+        gap: 0;
+        justify-content: inherit;
+    }
+    .shadow {
+        display: none;
+    }
+
+    .t1 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+    }
+
+    .t2 {
+        width: 100%;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        text-wrap: wrap;
+    }
+    .mid {
+        width: 100%;
+    }
+    .b {
+width: 120px;
+height: 21px;
+
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+
+    }
 }
 </style>
