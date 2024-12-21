@@ -132,7 +132,7 @@ img {
     }
     .promo {
         height: 410px;
-
+        padding: 0;
     }
     .content {
         top: 0;

@@ -1,10 +1,12 @@
 <template>
     <div class="nav">
-        <span>Репродукция</span>
-        <div class="items">
-            <router-link to="/france">Франция</router-link>
-            <router-link to="/germany">Германия</router-link>
-            <router-link to="/england">Англия</router-link>
+        <div class="n">
+            <span>Репродукция</span>
+            <div class="items">
+                <router-link to="/france">Франция</router-link>
+                <router-link to="/germany">Германия</router-link>
+                <router-link to="/england">Англия</router-link>
+            </div>
         </div>
     </div>
 
@@ -16,45 +18,39 @@
 
 <style scoped>
 .nav {
+    width: 100%;
+}
+.n {
+    padding-left: 5vw;
+    padding-right: 5vw;
     margin-left: auto;
     margin-right: auto;
+    max-width: 1100px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1110px;
-    width: 100%;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+}
+.items {
+    width: fit-content;
+    display: flex;
+    gap: 10px;
 }
 
 span {
     font-weight: 500;
     font-size: 40px;
     line-height: 110%;
-
     color: #2C2D35;
-}
-
-.items {
-    display: flex;
-
-    overflow: scroll;
-    justify-content: space-between;
-    width: 400px;
 }
 
 a {
     padding: 10px 20px;
-
     background: #D4E8D9;
     border-radius: 20px;
-
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
-
     color: #2C2D35;
     text-decoration: none;
 }
@@ -73,43 +69,34 @@ a.router-link-exact-active {
     text-decoration: none;
 }
 
+
 @media (max-width: 1200px) {
-    .nav {
-        max-width: 768px;
+    .n {
+        max-width:768px;
     }
 }
-
-@media (max-width: 768px) {
-    span {
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 110%;
-    }
-    .nav {
-        width: fit-content;
+@media (max-width: 900px) {
+    .n {
+        max-width:610px;
     }
 }
-
-@media (max-width: 576px) {
-    .nav {
-        align-items: flex-start;
+@media (max-width: 678px) {
+    .n {
+        padding: 0;
         flex-direction: column;
-        gap: 15px;
-
-
-    }
-    .items {
-        overflow: scroll;
-        width: 100%;
+        align-items: flex-start;
+        max-width:fit-content;
     }
     span {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 110%;
+        margin-bottom: 10px;
     }
-
-
 }
-
-@media (max-width: 320px) {}
+@media (max-width: 420px) {
+    span {
+        font-size: 20px;
+    }
+    a, a.router-link-exact-active {
+        font-size: 14px;
+    }
+}
 </style>

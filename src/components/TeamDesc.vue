@@ -91,6 +91,7 @@
 @media (max-width: 1200px) {
     .team {
         flex-direction: column;
+        padding: 0;
     }
 
     .content {

@@ -82,8 +82,12 @@ button {
     color: #598D66;
 
     margin-top: 15px;
+    cursor: pointer;
 }
-
+button:hover {
+    background-color: #376b44;
+    color: #fff;
+}
 @media (max-width: 1250px) {
     .card {
         width: 290px;

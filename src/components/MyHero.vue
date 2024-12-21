@@ -73,10 +73,13 @@ button {
     line-height: 23px;
 
     color: #598D66;
-
+    cursor: pointer;
     margin-top: 20px;
 }
-
+button:hover {
+    background-color: #598d66;
+    color: #fff;
+}
 @media (max-width: 1052px) {
     .t1 {
         font-weight: 500;
@@ -141,8 +144,9 @@ button {
     }
 
     .hero {
+        padding: 0;
         gap: 10px;
-        width: 100px;
+        width: 100%;
     }
 }
 
